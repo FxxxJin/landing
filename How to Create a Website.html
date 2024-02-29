@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Create a Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        .step {
+            margin-bottom: 20px;
+        }
+        .next-button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .next-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>How to Create a Website</h1>
+
+    <div class="step">
+        <h2>1. Choose a Domain Name</h2>
+        <p>Choose a unique and easy-to-remember domain name for your website.</p>
+    </div>
+
+    <div class="step">
+        <h2>2. Select a Web Hosting Service</h2>
+        <p>Choose a reliable web hosting service to host your website files.</p>
+    </div>
+
+    <div class="step">
+        <h2>3. Design Your Website</h2>
+        <p>Create a design for your website using HTML, CSS, and possibly JavaScript.</p>
+    </div>
+
+    <div class="step">
+        <h2>4. Develop Website Content</h2>
+        <p>Write and organize the content for your website, including text, images, and multimedia.</p>
+    </div>
+
+    <div class="step">
+        <h2>5. Test Your Website</h2>
+        <p>Test your website across different browsers and devices to ensure compatibility and responsiveness.</p>
+    </div>
+
+    <div class="step">
+        <h2>6. Launch Your Website</h2>
+        <p>Once everything is ready, upload your website files to your web hosting server and launch your website!</p>
+    </div>
+
+    <button class="next-button" onclick="scrollToNextStep()">Next Step</button>
+
+    <script>
+        function scrollToNextStep() {
+            var nextStep = document.querySelector('.step:not(.completed)');
+            if (nextStep) {
+                nextStep.scrollIntoView({ behavior: 'smooth' });
+                nextStep.classList.add('completed');
+            } else {
+                window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            }
+        }
+    </script>
+</body>
+</html>
